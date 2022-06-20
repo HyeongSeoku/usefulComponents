@@ -58,6 +58,8 @@ const LoginForm = () => {
   const handleSubmitLogin = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!emailValid || !pwdValid) return
+    setEmailState('')
+    setPwdState('')
     console.log('로그인 이벤트시 동작할 로직 작성 하세요')
   }
 
@@ -72,6 +74,7 @@ const LoginForm = () => {
             onFocus={handleEmailFocus}
             onBlur={handleEmailFocus}
             type='text'
+            value={emailState}
           />
         </div>
         <div className={cx(styles.validationMsg, { [styles.showMsg]: inValidEmail })}>
@@ -89,9 +92,10 @@ const LoginForm = () => {
             onFocus={handlePwdFocus}
             onBlur={handlePwdFocus}
             type={pwdVisible ? 'text' : 'password'}
+            value={pwdState}
           />
           <div role='button' tabIndex={0} className={styles.iconContainer} onClick={handlePwdVisible}>
-            {pwdVisible ? <HideIcon /> : <EyeIcon />}
+            {pwdVisible ? <EyeIcon /> : <HideIcon />}
           </div>
         </div>
         <div className={cx(styles.validationMsg, { [styles.showMsg]: inValidPwd })}>
