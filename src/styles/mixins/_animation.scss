@@ -1,0 +1,32 @@
+@mixin cubicBezier($duration) {
+  transition: $duration;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@mixin fadeInAnimation($duration) {
+  animation: fadein $duration;
+}
+
+@mixin rotateAnimation($duration) {
+  animation: rotation $duration ease-in-out infinite;
+}
