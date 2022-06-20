@@ -24,7 +24,7 @@
 }
 
 @mixin fadeInAnimation($duration) {
-  animation: fadein $duration;
+  animation: fadeIn $duration;
 }
 
 @mixin rotateAnimation($duration) {
