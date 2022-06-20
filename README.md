@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+<h1 align="center"> Rankypto </h1>
+<h3 align="center"> 암호 화폐 api를 이용하여 암호화폐의 정보 및 순위를 보여주는 프로젝트 </h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/-Typescript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"> <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=Sass&logoColor=white"> <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=flat-square&logo=React%20Query&logoColor=white">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center"><a href="https://coin-app-ebon.vercel.app/">🚀 배포 페이지</a></h2>
 
-## Available Scripts
+# 과제 설명
 
-In the project directory, you can run:
+## 🛠 기술 스택
+- TypeScript
+- React
+- scss
 
-### `npm start`
+api
+- https://api.coinpaprika.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 실행 방법
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+npm i -f
+npm start
+```
 
-### `npm test`
+- React 18 버전을 사용하여 18.x 버전을 의존성으로 갖지 않는 라이브러리가 있습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- force 옵션을 통해 설치하여야 합니다.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 구현 사항
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 로그인 폼
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Kapture 2022-06-20 at 23 54 17](https://user-images.githubusercontent.com/48541850/174630969-5df45646-9ef8-4101-86ad-668b207136ac.gif)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
